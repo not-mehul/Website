@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <title>The Website of Mehul Sen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+    <meta name="author" content="Mehul" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../../images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:200,400,500,700,800&display=swap' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../../css/clear.css">
+    <link rel="stylesheet" href="../../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../../css/prettyPhoto.css">
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="one-page">
+<div class="doc-loader"></div>
+<div class="container">
+    <div class="page-wrapper">
+        <!-- ================= HEADER ================= -->
+        <div id="nav-btn" class="nav-btn">
+                    <span class="nav-btn-cover">
+                        <span class="menu-line"></span>
+                    </span>
+        </div>
+        <div class="s-nav">
+            <div class="nav-container">
+                <a class="site-title slow-scroll" href="../../index.html">MEHUL SEN</a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="../blogs.html">Blog</a></li>
+                        <li><a href="../myinfo.html">My Info</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="nav-soc">
+                <li><a href="https://www.instagram.com/notmehul/">INSTAGRAM</a></li>
+                <li><a href="https://www.linkedin.com/in/mehulsen/">LINKEDIN</a></li>
+            </ul>
+        </div>
+        <!-- =============== HEADER END =============== -->
+        <!-- ============== SINGLE-BLOG ============== -->
+        <section class="single-blog section">
+            <div class="container-wrap">
+                <h1 class="entry-title">FakeLogonScreen - Tool Review</h1>
+
+                <ul class="meta">
+                    <li class="author">Mehul</li>
+                    <li class="date">OCT 3, 2021</li>
+                    <li class="category">
+                        <a href="#">Cybersecurity</a>
+                    </li>
+                </ul>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">Description</h2>
+                    Created by Arris Huijgen @bitsadmin<br/>
+                    Current Version 1.1, Last Updated 02/03/2020<br/>
+                    Built using .NET framework which is installed by default in Windows 8, 8.1 and 10.<br/>
+                    This tool takes advantage of the normal behavior of a Windows Lock Screen
+                    feature to phish out the victim’s password.<br/>
+                    <br/>
+                    Two Executables:
+                    <ul style="list-style-type:circle;">
+                        <li><b>FakeLogonScreen.exe</b> – write output to console (used for
+                    remote execution)</li>
+                        <li><b>FakeLogonScreenToFile.exe</b> – writes output to console as well as %LocalAppData%\Microsoft\user.db</li>
+                    </ul>
+                </div>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">Installation and Execution</h2>
+                    Developed by Charles Bennett and Gilles Brassard in 1984, it is the first quantum cryptography
+                    protocol and is provably secure. To maintain its security, it relies on two principles of quantum
+                    mechanics:<br/>
+                    <ul style="list-style-type:circle;">
+                        <li>Go to the github releases page for this tool: <a href="https://github.com/bitsadmin/fakelogonscreen/releases">bitsadmin/fakelogonscreen</a></li>
+                        <li>Download fakelogonscreen_trunk.zip file (73.2 kb).</li>
+                        <li>Unzip the tool, to get the executables.</li>
+                        <b>Note:</b> Window’s Defender flags the zip file because it detects
+                        MSIL/Deismos.A!MTB. So, disabling Window’s Defender or allowing the threat is
+                        required.
+                        <li>The executable displays a lock screen when run, forcing the victim to enter
+                            the correct credentials to get access back to their machine.</li>
+                        <li>Validates the password against Active Directory or the local machine.</li>
+                        <li>The credentials are then saved locally or sent to a remote machine.
+                        </li>
+                        <b>Note:</b> Since, the executable is not verified, Windows also shows a warning on
+                        running the executable locally.
+                    </ul>
+                    <h2 style="margin-top: 20px;">Features</h2>
+                    <ul style="list-style-type:circle;">
+                        <li>Minimizes all other windows, and blackens any additional displays, showing
+                            only the lock screen, it also uses the ‘Always On Top’ setting so it cannot be
+                            moved to the background.</li>
+                        <li>In case of a custom background, it displays that background instead of the
+                            default one.</li>
+                        <li>Blocks many shortcut keys to prevent circumventing the screen.</li>
+                        <li>Validates the entered password before closing the screen.</li>
+                    </ul>
+                </div>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">Detection and Bypass</h2>
+                    There are a couple ways, we can detect whether this executable is running or not.
+                    <ul style="list-style-type:circle;">
+                        <li>Internet, Ease of Access and Power Buttons are absent.</li>
+                        <div class="thumbnail-img block-right" style="text-align:center">
+                            <img src="../../images/fls/missing_1.png" style="width:10%; margin-left: auto; margin-right: auto;" alt="">
+                        </div>
+                        <li>The Reset Password initially does not show up, and even after repeated failed password logging attempts, for local machines, “Sign-in options” is never present.</li>
+                        <li>Can be bypassed using <b>Ctrl + Alt + Delete</b> and then opening task manager.</li>
+                        <div class="thumbnail-img block-right" style="text-align:center">
+                            <img src="../../images/fls/difference.png" style="width:70%; margin-left: auto; margin-right: auto;" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- ============= SINGLE-BLOG END ============= -->
+    </div>
+</div>
+
+<!--=================== SCRIPT ===================-->
+<script src="../../js/jquery.js"></script>
+<script src="../../js/imagesloaded.pkgd.js"></script>
+<script src="../../js/jquery.fitvids.js"></script>
+<script src="../../js/jarallax.js"></script>
+<script src="../../js/jarallax-element.min.js"></script>
+<script src="../../js/isotope.pkgd.js"></script>
+<script src="../../js/jquery.prettyPhoto.js"></script>
+<script src='../../js/owl.carousel.min.js'></script>
+<script src="../../js/main.js"></script>
+</body>
+</html>

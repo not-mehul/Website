@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <title>Mehul Sen</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=Poppins:200,400,500,700,800&display=swap' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/clear.css">
+    <link rel="stylesheet" href="../css/bootstrap-grid.css">
+    <link rel="stylesheet" href="../css/prettyPhoto.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--[if lt IE 9]>
+    <script src="../js/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="single-post single">
+
+<div class="doc-loader"></div>
+
+<div class="container">
+    <div class="page-wrapper">
+
+        <!-- ================= HEADER ================= -->
+        <div id="nav-btn" class="nav-btn">
+                    <span class="nav-btn-cover">
+                        <span class="menu-line"></span>
+                    </span>
+        </div>
+        <div class="s-nav">
+            <div class="nav-count">
+                <div class="current-num">
+                    <span>01</span>
+                </div>
+                <div class="pagination-sep">/</div>
+                <div class="total-pages-num">01</div>
+            </div>
+            <div class="nav-container">
+                <a class="site-title slow-scroll" href="index.html#home">MEHUL SEN</a>
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <!--<li><a href="index.html#portfolio">Portfolio</a></li>-->
+                        <li><a href="blogs.html">Blog</a></li>
+                        <li><a href="accomplishments.html">Awards and Competitions</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <ul class="nav-soc">
+                <li><a href="https://www.instagram.com/notmehul/">INSTAGRAM</a></li>
+                <li><a href="https://www.linkedin.com/in/mehulsen/">LINKEDIN</a></li>
+            </ul>
+        </div>
+        <!-- =============== HEADER END =============== -->
+
+        <!-- ============== SINGLE-BLOG ============== -->
+        <section class="single-blog section">
+            <div class="container-wrap">
+                <h1 class="entry-title">BB84 - A Quantum Key Distribution Scheme</h1>
+
+                <ul class="meta">
+                    <li class="author">Mehul</li>
+                    <li class="date">OCT 22, 2021</li>
+                    <li class="category">
+                        <a href="#">Theory</a>
+                    </li>
+                </ul>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">Introduction</h2>
+                    As part of the CSCI-464: Xtreme Theory class under
+                    <a href="https://www.rit.edu/directory/tjbcis-thomas-borrelli">Prof. Thomas Borrelli</a>. I took
+                    part in "Lightning Talks" which attempted to make theory less abstract and provide practical
+                    importance. For my topic, I chose to research BB84, a quantum key distribution scheme.
+
+                    <h2 style="margin-top: 20px;">Quantum Key Distribution (QKD)</h2>
+                    QKD is a secure communication method which implements a cryptographic protocol involving
+                    components of quantum mechanics. It enables two parties to produce a shared random secret key, which
+                    can then be used to encrypt and decrypt messages.<br/>
+                    Note: This is often incorrectly called Quantum Cryptography which is the science of exploiting quantum
+                    mechanical properties to perform cryptographic tasks. QKD is the best-known example of a Quantum
+                    Cryptographic task.<br/>
+                    Example: Alice and Bob come up with a common secret key which they can use to encrypt and decrypt
+                    the files shared among each other.<br/>
+                </div>
+                <br/>
+                <div class="thumbnail-img block-right" style="text-align:center">
+                    <img src="../images/bb84/Crypto_Algorithms.png" style="width:70%; margin-left: auto; margin-right: auto;">
+                    <a href="https://cryptologie.net/article/334/nist-and-quantum-computers/">NIST and Quantum Computers</a>
+                </div>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">BB84</h2>
+                    Developed by Charles Bennett and Gilles Brassard in 1984, it is the first quantum cryptography
+                    protocol and is provably secure. To maintain its security, it relies on two principles of quantum
+                    mechanics:<br/>
+                    <ul style="list-style-type:circle;">
+                        <li>Heisenberg’s Uncertainty Principle : we cannot know both the position and momentum of a
+                            particle at quantum level, it is impossible to create an independent and identical copy of
+                            an arbitrary unknown quantum state. (No-Cloning Theorem)
+                        </li>
+                        <li>Entanglement : Quantum particles are not always independent of each other and can be
+                            entangled, when you measure one particle, the superposition of the other instantly collapses.
+                        </li>
+                    </ul>
+                    It has a complexity of BQP (Bounded-error quantum polynomial time) which is the class of decision
+                    problems solvable by a quantum computer in polynomial time.<br/>
+                    <h2 style="margin-top: 20px;">Quantum Channel</h2>
+                    A quantum channel is a communication channel which can transmit quantum information such as the state of qubit.
+                    There are 4 potential qubit states.<br/>
+                </div>
+                <br/>
+                <div class="thumbnail-img block-right" style="text-align:center">
+                    <img src="../images/bb84/bb84_states.png" style="width:70%; margin-left: auto; margin-right: auto;">
+                    <a href="">Orthogonal States</a>
+                </div>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">The BB84 Protocol</h2>
+                    <b>Step 1: </b>Alice chooses a random string of bits.<br/>
+                    <b>Step 2: </b>Alice chooses a random basis to encode each bit with.<br/>
+                    <b>Step 3: </b>Alice encodes the bits using the chosen basis and sends qubits to Bob through a quantum channel.<br/>
+                    <b>Step 4: </b>Bob receives the qubit states through the common quantum channel.<br/>
+                    <b>Step 5: </b>Bob chooses a random basis to encode each receiving qubit state with.<br/>
+                    <b>Step 6: </b>Bob measures the polarization of the received qubit states.<br/>
+                    <b>Step 7: </b>After receiving the qubit states, Bob and Alice discuss their choses basis over a classical channel, remove the different basis.<br/>
+                    <b>Step 8: </b>Resulting shared secret is the <b>Sifted Key</b> which can be used to encrypt and decrypt the data.<br/>
+                </div>
+                <div class="thumbnail-img block-right" style="text-align:center">
+                    <img src="../images/bb84/bb84_steps.png" style="width:70%; margin-left: auto; margin-right: auto;">
+                    <a href="">BB84 Steps</a>
+                </div>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">Security of BB84</h2>
+                    Each randomly chosen basis by Bob has a 50% likelihood of being correct and 50% likelihood of being
+                    incorrect. The size of the sifted key would be roughly half of the initially used bits.<br/>
+
+                    In the event that Eve tries to intercept the quantum channel between Alice and Bob, since she cannot make
+                    identical copies of the qubits, she would have to communicate individually with Alice, and then with Bob. This
+                    would mean that Bob’s likelihood of choosing the same basis as Alice will be reduced to 25% with the
+                    probability of being incorrect becoming 75%. With this they can easily detect if their communication is being
+                    intercepted.<br/>
+
+                    One drawback for BB84 is that the bits chosen by alice have to be random, if not, Eve is able to imitate Alice
+                    and successfully conduct a MITM attack.<br/>
+                </div>
+                <div class="content-670">
+                    <h2 style="margin-top: 20px;">References</h2>
+                    <ul style="list-style-type:circle;">
+                        <li><a href="https://en.wikipedia.org/wiki/Quantum_key_distribution">Quantum Key Distribution - Wikipedia</a></li>
+                        <li><a href="https://csrc.nist.gov/csrc/media/publications/nistir/8105/final/documents/nistir_8105_draft.pdf">Report on Post-Quantum Cryptography - NIST</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/BB84">BB84 - Wikipedia</a></li>
+                        <li><a href="https://youtu.be/44G9UuB2RWI">BB84 Protocol - Youtube</a></li>
+                        <li><a href="https://cryptography.fandom.com/wiki/BB84">BB84 Information - Fandom</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- ============= SINGLE-BLOG END ============= -->
+    </div>
+</div>
+
+<!--=================== SCRIPT ===================-->
+<script src="../js/jquery.js"></script>
+<script src="../js/imagesloaded.pkgd.js"></script>
+<script src="../js/jquery.fitvids.js"></script>
+<script src="../js/jarallax.js"></script>
+<script src="../js/jarallax-element.min.js"></script>
+<script src="../js/isotope.pkgd.js"></script>
+<script src="../js/jquery.prettyPhoto.js"></script>
+<script src='../js/owl.carousel.min.js'></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

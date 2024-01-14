@@ -3,7 +3,7 @@
 [Table of contents]
 1. Global CSS
 2. Header / Menu CSS
-3. Home Section CSS 
+3. Home Section CSS
 4. Service Section CSS
 5. About Section CSS
 6. Portfolio Section CSS
@@ -61,6 +61,97 @@ a:hover {
 .section a {
     font-weight: 700;
     color: #323232;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The actual content */
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Place the container to the left */
+.timeline-left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.timeline-right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.timeline-left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline-right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* The circles on the timeline */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid black;
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline-right::after {
+    left: -13px;
 }
 
 .section a:hover {
@@ -226,7 +317,7 @@ img.block-right {
     line-height: 30px;
     letter-spacing: 5px;
     font-weight: 700;
-    margin-bottom: 51px;    
+    margin-bottom: 51px;
     position: relative;
     display: inline-block;
 }
@@ -303,7 +394,7 @@ img.block-right {
     background-color: #000;
 }
 
-.nav-btn .nav-btn-cover:after, 
+.nav-btn .nav-btn-cover:after,
 .nav-btn .nav-btn-cover:before {
     content: '';
     height: 3px;
@@ -367,8 +458,8 @@ img.block-right {
     font-size: 140px;
     line-height: 143px;
     letter-spacing: -4px;
-    z-index: 1;   
-    left: 0;    
+    z-index: 1;
+    left: 0;
 }
 /**
 #home .entry-title span {
@@ -412,7 +503,7 @@ img.block-right {
 ====================================== */
 
 .section-des {
-    max-width: 440px;
+    max-width: 100%;
     font-size: 22px;
     line-height: 1.65;
 }
@@ -556,7 +647,7 @@ img.block-right {
 }
 
 .grid {
-    width: 100%;    
+    width: 100%;
     position: relative;
     display: block;
     overflow: hidden;
@@ -570,7 +661,7 @@ img.block-right {
     box-sizing:border-box;
     -moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
-    overflow: hidden;    
+    overflow: hidden;
     width: 50%;
     transition: opacity .3s;
 }
@@ -580,7 +671,7 @@ img.block-right {
     width: 100%;
     height: auto;
     max-height: none;
-    max-width: none;    
+    max-width: none;
 }
 
 .grid-sizer,
@@ -698,7 +789,7 @@ img.block-right {
 
 #portfolio-grid.hide {
     opacity: 0;
-    transform: translateY(70px);    
+    transform: translateY(70px);
 }
 
 .owl-carousel .owl-item {
@@ -745,7 +836,7 @@ div.pp_default .pp_loaderIcon {
 
 div.pp_default a.pp_arrow_previous {
     background-image: url(../images/nav_left.png);
-    background-size: 20px 20px;    
+    background-size: 20px 20px;
     width: 20px;
     height: 20px;
     margin-top: 5px;
@@ -757,7 +848,7 @@ div.pp_default a.pp_arrow_previous {
 
 div.pp_default a.pp_arrow_next {
     background-image: url(../images/nav_right.png);
-    background-size: 20px 20px;    
+    background-size: 20px 20px;
     width: 20px;
     height: 20px;
     margin-top: 5px;
@@ -782,7 +873,7 @@ div.pp_default .pp_close {
     margin-top: 5px;
     text-indent: -99999999px;
     font-size: 0;
-    line-height: 0;    
+    line-height: 0;
 }
 
 div.pp_default .pp_next:hover {
@@ -798,7 +889,7 @@ div.pp_default .pp_previous:hover {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: 5% 50%;
-    background-size: 20px;    
+    background-size: 20px;
 }
 
 div.pp_default .pp_nav .currentTextHolder {
@@ -949,7 +1040,7 @@ div.pp_default .pp_description {
 .skills-progress .name {
     font-size: 12px;
     line-height: 28px;
-    letter-spacing: 3.5px;    
+    letter-spacing: 3.5px;
     width: 37%;
     padding-right: 30px;
 }
@@ -985,8 +1076,8 @@ div.pp_default .pp_description {
     margin-bottom: 0;
 }
 
-.contact-form input[type=text], 
-.contact-form input[type=email], 
+.contact-form input[type=text],
+.contact-form input[type=email],
 .contact-form textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -1042,37 +1133,37 @@ p.contact-submit-holder {
     opacity: 0.8;
 }
 
-.contact-form input[type=text]::-webkit-input-placeholder, 
-.contact-form input[type=email]::-webkit-input-placeholder, 
+.contact-form input[type=text]::-webkit-input-placeholder,
+.contact-form input[type=email]::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
     font-family: 'Poppins', sans-serif;
     color: #000;
     font-weight: 400;
     font-size: 12px;
-    line-height: 25px;    
-    opacity: 1;  
+    line-height: 25px;
+    opacity: 1;
 }
 
-.contact-form input[type=text]:-ms-input-placeholder, 
-.contact-form input[type=email]:-ms-input-placeholder, 
+.contact-form input[type=text]:-ms-input-placeholder,
+.contact-form input[type=email]:-ms-input-placeholder,
 .contact-form textarea:-ms-input-placeholder {
     font-family: 'Poppins', sans-serif;
     color: #000;
     font-weight: 400;
     font-size: 12px;
-    line-height: 25px;    
-    opacity: 1;  
+    line-height: 25px;
+    opacity: 1;
 }
 
-.contact-form input[type=text]::placeholder, 
-.contact-form input[type=email]::placeholder, 
+.contact-form input[type=text]::placeholder,
+.contact-form input[type=email]::placeholder,
 .contact-form textarea::placeholder {
     font-family: 'Poppins', sans-serif;
     color: #000;
     font-weight: 400;
     font-size: 12px;
     line-height: 25px;
-    opacity: 1;    
+    opacity: 1;
 }
 
 
@@ -1080,7 +1171,7 @@ p.contact-submit-holder {
     10. Single Blog / Post Page CSS
 ====================================== */
 
-.single-blog .entry-title {    
+.single-blog .entry-title {
     font-size: 32px;
     line-height: 35px;
     margin-bottom: 32px;
@@ -1092,7 +1183,7 @@ p.contact-submit-holder {
     margin-bottom: 30px;
 }
 
-.single-blog .meta li {    
+.single-blog .meta li {
     font-weight: 700;
     font-size: 10px;
     line-height: 14px;
@@ -1348,7 +1439,7 @@ p.contact-submit-holder {
 
     .serv-block-wrap .serv-block-item {
         margin-bottom: 65px;
-    }    
+    }
 
     .block-right {
         margin-right: 0;
@@ -1372,14 +1463,14 @@ p.contact-submit-holder {
 
     .home-blog-list li p {
         padding: 0 40px 0 50px;
-    }   
+    }
     .about-info {
         margin: 0 0 40px 40px;
     }
 
 }
 
-@media (max-width: 767px) {    
+@media (max-width: 767px) {
 
     .nav-btn {
         background-color: #DDD0C8;
@@ -1443,7 +1534,7 @@ p.contact-submit-holder {
 
     .serv-block-wrap .serv-block-item img {
         max-height: 60px;
-    }    
+    }
 
     .serv-block-wrap .serv-block-item p {
         margin-top: 15px;
@@ -1462,7 +1553,7 @@ p.contact-submit-holder {
     .about-info {
         width: 280px;
         padding: 50px 30px 50px 40px;
-    }   
+    }
 
     .home-blog-list {
         padding-right: 20px;
@@ -1471,7 +1562,7 @@ p.contact-submit-holder {
     .home-blog-list li a {
         font-size: 20px;
         line-height: 1.5;
-    }    
+    }
 
     .skills-history {
         padding: 62px 30px 62px 30px;
@@ -1491,7 +1582,7 @@ p.contact-submit-holder {
 
     .skills-progress li {
         width: 100%;
-    }    
+    }
 
 }
 
@@ -1562,13 +1653,13 @@ p.contact-submit-holder {
 
     .about-text {
         padding-top: 0;
-    }        
+    }
 
     .signature {
         max-width: 100%;
     }
 
-    .grid-sizer, 
+    .grid-sizer,
     .grid-item {
         width: 100% !important;
     }
@@ -1624,7 +1715,7 @@ p.contact-submit-holder {
 
     .skills-progress li .skill {
         width: 100%;
-    }    
+    }
 
     .single-blog .content-670 blockquote {
         max-width: 100%;

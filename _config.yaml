@@ -3,5 +3,7 @@ plugins:
 relative_links:
   enabled: true
   collections: true
+include:
+  - webpages/Blogs/Uploads/project5.md
 
 theme: jekyll-theme-tactile

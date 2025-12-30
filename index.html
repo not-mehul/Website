@@ -1,97 +1,342 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-    <title>The Website of Mehul Sen</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
-    <meta name="author" content="Mehul" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" href="./images/favicon.ico">
-    <link href='https://fonts.googleapis.com/css?family=Poppins:200,400,500,700,800&display=swap' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./css/clear.css">
-    <link rel="stylesheet" href="./css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./css/prettyPhoto.css">
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfolio of Mehul Sen - Solutions Engineer & Cybersecurity Professional"
+        />
+        <title>Mehul Sen | Technical Trainer</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!--[if lt IE 9]>
-    <script src="./js/html5shiv.js"></script>
-    <script src="./js/respond.min.js"></script>
-    <![endif]-->
-</head>
+        <link rel="stylesheet" href="css/style.css" />
 
-<body class="one-page">
-<div class="doc-loader"></div>
-<div class="container">
-    <div class="page-wrapper">
-        <!-- ================= HEADER ================= -->
-        <div id="nav-btn" class="nav-btn">
-                    <span class="nav-btn-cover">
-                        <span class="menu-line"></span>
-                    </span>
-        </div>
-        <div class="s-nav">
-            <div class="nav-container">
-                <a class="site-title slow-scroll" href="#home">MEHUL SEN</a>
-                <nav class="nav-menu">
-                    <ul class="nav-list">
-                        <li><a href="./webpages/about_me.html">About Me</a></li>
-                        <li><a href="https://paradoxicalbit.com">Projects</a></li>
-                        <li><a href="webpages/socials.html">Socials</a></li>
-                    </ul>
-                </nav>
+        <link rel="shortcut icon" href="images/favicon.ico" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="#" class="logo">Mehul Sen</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Journey</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li>
+                        <a href="https://paradoxicalbit.com" target="_blank"
+                            >Projects</a
+                        >
+                    </li>
+                    <li><a href="#contact" class="btn-nav">Contact</a></li>
+                </ul>
             </div>
-            <ul class="nav-soc">
-                <li><a href="https://www.instagram.com/notmehul/">INSTAGRAM</a></li>
-                <li><a href="https://www.linkedin.com/in/mehulsen/">LINKEDIN</a></li>
-            </ul>
-        </div>
-        <!-- =============== HEADER END =============== -->
+        </nav>
 
-                <!-- ================== HOME ================== -->
-                <section id="home" class="section">
-                    <div class="container-wrap">
-                        <img class="main-photo block-right smooth-image" data-jarallax-element="0 -30" src="./images/image.jpg" alt="Mehul">
-                        <h1 class="entry-title" data-jarallax-element="0 30" style="color: orange;">Hello I’m <br><span>Mehul Sen</span></h1>
-
-                        <a href="#about" class="main-btn slow-scroll">
-                            <img src="./images/scroll-icon.svg" alt="" class="scroll-icon">
-                        </a>
-                    </div>
-                </section>
-                <!-- ================= HOME END ================= -->
-
-                <!-- ==================== ABOUT ==================== -->
-                <section id="about" class="section">
-                    <div class="section-des">
-                        CompTIA Security+ and Network+ certified, M.S. in Cybersecurity graduate with expertise in network security, vulnerability assessments, and security tool development. Currently a Solutions Engineer at Verkada, I specialize in designing and delivering cloud-managed security solutions across video surveillance, access control, and environmental monitoring.<br>
-                    </div>
-                </section>
-                <!-- ================== ABOUT END ================== -->
-                <!-- ==================== BLOG ==================== -->
-                <section class="section">
-                    <h2 class="title" style="text-align: center">
-                        <a href="webpages/about_me.html">ABOUT ME</a> |
-                        <a href="https://paradoxicalbit.com">PROJECTS</a> |
-                        <a href="webpages/socials.html">SOCIALS</a>
+        <header class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="greeting">Hello, I'm</span>
+                    <h1>Mehul Sen</h1>
+                    <h2 class="role-title">
+                        Technical Trainer &
+                        <span class="typing-effect"
+                            >Cybersecurity Professional</span
+                        >
                     </h2>
-                </section>
-                <!-- ================== BLOG END ================== -->
+                    <p class="subtitle">
+                        Bridging the gap between complex IoT architecture and
+                        actionable knowledge. I design high-impact technical
+                        training to empower teams, partners, and customers.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#experience" class="btn btn-primary"
+                            >View My Journey</a
+                        >
+                        <a
+                            href="https://paradoxicalbit.com"
+                            target="_blank"
+                            class="btn btn-secondary"
+                            >See Projects</a
+                        >
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="images/image.jpg" alt="Mehul Sen" />
+                    </div>
+                </div>
             </div>
-        </div>
+        </header>
 
-        <!--=================== SCRIPT ===================-->
-        <script src="./js/jquery.js"></script>
-        <script src="./js/imagesloaded.pkgd.js"></script>
-        <script src="./js/jquery.fitvids.js"></script>
-        <script src="./js/jarallax.js"></script>
-        <script src="./js/jarallax-element.min.js"></script>
-        <script src="./js/isotope.pkgd.js"></script>
-        <script src="./js/jquery.prettyPhoto.js"></script>
-        <script src='./js/owl.carousel.min.js'></script>
-        <script src="./js/main.js"></script>
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="about-content">
+                    <p>
+                        I operate at the intersection of
+                        <strong
+                            >instructional design, security, and
+                            strategy</strong
+                        >. As a Technical Trainer at Verkada, I serve as a
+                        primary technical authority, translating complex network
+                        and physical security concepts into accessible,
+                        actionable knowledge for audiences ranging from
+                        Installers to C-level executives. I operate at the
+                        intersection of
+                        <strong>infrastructure, security, and strategy</strong>.
+                        As a Solutions Engineer at Verkada and an M.S.
+                        Cybersecurity graduate, I don't just protect systems; I
+                        design them to be resilient.
+                    </p>
+                    <p>
+                        My professional philosophy is built on continuous
+                        evolution and data-driven impact. From consulting on
+                        real-world deployment scenarios to analyzing training
+                        efficacy, I leverage deep technical expertise to
+                        optimize physical security environments and evangelize
+                        new product offerings.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Professional Journey</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">December 2025 - Present</div>
+                            <h3>Technical Trainer</h3>
+                            <h4>Verkada</h4>
+                            <p>
+                                Serve as the primary technical authority on
+                                Verkada’s integrated product suite. I design and
+                                execute training workshops on cloud-managed
+                                security, consulting on network architecture and
+                                hardware selection while monitoring curriculum
+                                efficacy through rigorous data analysis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">June 2024 - November 2025</div>
+                            <h3>Solutions Engineer</h3>
+                            <h4>Verkada</h4>
+                            <p>
+                                Architecting cloud-managed security ecosystems
+                                across video, access control, and sensors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">Jan 2024</div>
+                            <h3>CompTIA Security+ Certification</h3>
+                            <h4>Credential</h4>
+                            <p>
+                                Validated expertise in core security functions,
+                                risk management, and network architecture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">Jan 2023 - May 2024</div>
+                            <h3>Master of Science in Cybersecurity</h3>
+                            <h4>Rochester Institute of Technology</h4>
+                            <p>
+                                Specialized in network security, vulnerability
+                                assessments, and advanced threat modeling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">July 2022</div>
+                            <h3>CompTIA Network+ Certification</h3>
+                            <h4>Credential</h4>
+                            <p>
+                                Certified proficiency in designing, configuring,
+                                and troubleshooting mission-critical networks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">Jan 2022 - Aug 2022</div>
+                            <h3>Network Support Technician Co-op</h3>
+                            <h4>Wegmans Food Markets</h4>
+                            <p>
+                                Optimized large-scale network infrastructures
+                                and engineered custom tools for configuration
+                                management.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">Aug 2018 - Dec 2022</div>
+                            <h3>Bachelor of Science in Cybersecurity</h3>
+                            <h4>Rochester Institute of Technology</h4>
+                            <p>Graduated Summa Cum Laude.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Strategy & Competencies</h3>
+                        <div class="tags">
+                            <span>Public Speaking</span>
+                            <span>Presentation Skills</span>
+                            <span>Channel Partners</span>
+                            <span>Solution Delivery</span>
+                            <span>Technical Subject Matter</span>
+                            <span>Penetration Testing</span>
+                            <span>Threat Modeling</span>
+                            <span>Cryptography</span>
+                            <span>Reverse Engineering</span>
+                            <span>Physical Security</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Infrastructure & Networking</h3>
+                        <div class="tags">
+                            <span>Network Design</span>
+                            <span>Network Engineering</span>
+                            <span>Network Security Implementation</span>
+                            <span>Network Infrastructure</span>
+                            <span>AWS</span>
+                            <span>Azure</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Cisco IOS</span>
+                            <span>Palo Alto</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Security Operations</h3>
+                        <div class="tags">
+                            <span>SIEM/SOAR</span>
+                            <span>Splunk</span>
+                            <span>Zeek</span>
+                            <span>Burp Suite</span>
+                            <span>Nmap</span>
+                            <span>Wireshark</span>
+                            <span>Metasploit</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3>Languages & Scripting</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>JavaScript</span>
+                            <span>C++</span>
+                            <span>Bash</span>
+                            <span>PowerShell</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-dark">
+            <div class="container text-center">
+                <h2 class="section-title text-light">Connect</h2>
+                <div class="title-line title-line-light"></div>
+
+                <div class="social-links">
+                    <a href="mailto:mehulsen@mail.rit.edu" class="social-item">
+                        <img
+                            src="images/bx-envelope.svg"
+                            alt="Email"
+                            class="social-icon"
+                        />
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/mehulsen/"
+                        target="_blank"
+                        class="social-item"
+                    >
+                        <img
+                            src="images/bxl-linkedin.svg"
+                            alt="LinkedIn"
+                            class="social-icon"
+                        />
+                    </a>
+                    <a
+                        href="https://github.com/not-mehul"
+                        target="_blank"
+                        class="social-item"
+                    >
+                        <img
+                            src="images/bxl-github.svg"
+                            alt="GitHub"
+                            class="social-icon"
+                        />
+                    </a>
+                    <a
+                        href="https://www.instagram.com/notmehul/"
+                        target="_blank"
+                        class="social-item"
+                    >
+                        <img
+                            src="images/bxl-instagram.svg"
+                            alt="Instagram"
+                            class="social-icon"
+                        />
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Mehul Sen. All rights reserved.</p>
+            </div>
+        </footer>
     </body>
 </html>
